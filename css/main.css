@@ -1,0 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+#accordion-item-name {
+    color: black;
+    background: rgba(58, 77, 145, 0.3);
+    border-color: black;
+}
+#item-form {
+    display: inline-block;
+    text-align: center;
+    margin: 0px auto 0px auto;
+    padding: 30px 10px 20px 10px;
+}
+
+#logo-image img {
+  width: 143px;
+  height: 79px;
+}
+body {
+    background-color: rgba(33, 54, 69, 0.7);
+    font-family: 'Oswald', 'Futura', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    list-style-type: none;
+    padding-left: 1em;
+    padding-top: 10px;
+}
