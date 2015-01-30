@@ -4,11 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Thinkful Shopping Cart</title>
-    <header id="page-header">
-        <section id="logo-image">
-            <img src="images/shopping-cart.gif">
-        </section>
-    </header>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
@@ -21,39 +16,78 @@
 </head>
 
 <body>
+    <header id="page-header">
+        <section id="logo-image">
+            <img src="images/shopping-cart.gif">
+        </section>
+    </header>
     <center>
-      <h2>Shopping List</h2>
+        <h2>Shopping List</h2>
         <section id="item-form">
-            <form action="js/add-validator.js">
-                <ul>
-                    <li>
-                        <p>Grocery Name:</p>
-                        <input type="txt" name="groceryname" id="grocery-name-field" value="Enter Grocery" onClick="this.value='';">
-                    </li>
-                    <li>
-                        <p>Price:</p>
-                        <input type="txt" name="price" value="$0.00" onClick="this.value='';" id="grocery-price-field">
-                    </li>
-                    <li>
-                        <p>Description:</p>
-                        <textarea name="descriptionTextBox" cols="35" rows="5">
-                        </textarea>
-                    </li>
-                    <br>
-                    <li>
-                        <input type="submit" onclick="add-item.js" value="Add Item">
-                    </li>
-                </ul>
-            </form>
+
+            <ul id="sortable">
+            </ul>
+
 
         </section>
     </center>
     <section id="item-list">
         <div id="accordion">
-            <h4 id="accordion-item-name">Items 1</h4>
-            <div>content of item 1</div>
-            <h4 id="accordion-item-name">Item 2<i></i></h4>
-            <div>content of item 2</div>
+            <h4 class="outeraccordion" id="accordion-item-apple">Apples</h4>
+            <div>
+                <input type="checkbox" class="item-checkbox" data-header="Apples">
+                <p class="fa fa-cart-plus"> Enjoy Delicious all natrual granny Apples From South America.
+                    <img class="item-image" src="images/apple_granny_smith.jpg" align="middle">
+                </p>
+            </div>
+            <h4 class="outeraccordion" id="accordion-item-bread"> Bread </h4>
+            <div>
+                <input type="checkbox" class="item-checkbox" data-header="Bread">
+                <p class="fa fa-cart-plus">Baked Fresh daliy, try some of our wonderful bread with your favorite meals.<img class="item-image" src="images/bread.jpg" align="middle">
+                </p>
+            </div>
+            <h4 class="outeraccordion" id="accordion-item-wwcereal">Whole Wheat Cereal</h4>
+            <div>
+                <input type="checkbox" class="item-checkbox" data-header="Whole Wheat Cereal">
+                <p class="fa fa-cart-plus">Wake up to some of our natural whole wheat cereal.<img class="item-image" src="images/cereal.jpg" align="middle">
+                </p>
+            </div>
+            <h4 class="outeraccordion" id="accordion-item-dairy">Dairy Basket</h4>
+            <div>
+                <input type="checkbox" class="item-checkbox" data-header="Dairy Basket">
+                <p class="fa fa-cart-plus">Order our basket of dary items<img class="item-image" src="images/dairy.png" align="middle">
+                </p>
+            </div>
+            <h4 class="outeraccordion" id="accordion-item-eggs">Eggs</h4>
+            <div>
+                <input type="checkbox" class="item-checkbox" data-header="Eggs">
+                <p class="fa fa-cart-plus">Our Eggs are all free range. They are curelty free as well.<img class="item-image" src="images/eggs.jpg" align="middle">
+                </p>
+            </div>
+            <h4 class="outeraccordion" id="accordion-item-fish">Fish</h4>
+            <div>
+                <input type="checkbox" class="item-checkbox" data-header="Fish">
+                <p class="fa fa-cart-plus">Try our fresh water fish selection. No added Hormones!!<img class="item-image" src="images/fish.jpg" align="middle">
+                </p>
+            </div>
+            <h4 class="outeraccordion" id="accordion-item-meat">Red Meat</h4>
+            <div>
+                <input type="checkbox" class="item-checkbox" data-header="Red Meat">
+                <p class="fa fa-cart-plus">Our Delicious meat come from locally raised grass fed animals<img class="item-image" src="images/red-meat.jpeg" align="middle">
+                </p>
+            </div>
+            <h4 class="outeraccordion" id="accordion-item-jam">Jam</h4>
+            <div>
+                <input type="checkbox" class="item-checkbox" data-header="Jam">
+                <p class="fa fa-cart-plus">Try our <b>Brand New</b> home made jam made from fresh fruits!<img class="item-image" src="images/jam.jpg" align="middle">
+                </p>
+            </div>
+            <h4 class="outeraccordion" id="accordion-item-veggies">Vegetable basket</h4>
+            <div>
+                <input type="checkbox" class="item-checkbox" data-header="Vegetables">
+                <p class="fa fa-cart-plus">Every single one of our vegetables are straight from our garden. With no pesticides<img class="item-image" src="images/veggies.jpg" align="middle">
+                </p>
+            </div>
         </div>
     </section>
 
